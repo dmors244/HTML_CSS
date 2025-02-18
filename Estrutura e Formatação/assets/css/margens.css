@@ -1,0 +1,19 @@
+
+body{
+    background-color: antiquewhite;
+    margin: 11px;
+}
+.quadrado{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(179, 165, 255);
+    margin-bottom: 0px;
+}
+
+.quadrado2{
+    width: 200px;
+    height: 200px;
+    background-color:brown;
+    margin-top: 10px;
+    padding-left: 90px;;
+}

@@ -1,0 +1,16 @@
+/* Formatos para estilizar cores*/
+body{ 
+    background-color: bisque; /*busca por nome (inglês)*/
+}
+
+.Hexadecimal{
+    color:#FF6347 /*burca por código hexadeciaml*/
+}
+
+.rgb{
+    color: rgb(147,112,219)
+}
+
+.rgba{
+    color:rgba(0,139,139, 0.200)
+}

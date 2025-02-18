@@ -1,0 +1,115 @@
+<html>
+    <head>
+        <title>Formulário</title>
+    </head>
+
+    <body>
+
+        <h1>Formulário de localidade</h1>
+        
+        <h3>Prencha seus dados de envio;</h3>
+
+        <form action="/cadastro" enctype="multipart/form-data" method="post">
+
+            <input placeholder="Insira seu endereço" type="text" name="endereço" />
+                        
+            <br><br/>
+
+            <textarea name="objeto" placeholder="Descreva o objeto enviado"></textarea>
+
+            <br><br/>
+
+            <input type="number" min="0" name="quantidade" placeholder="Sua idade"/>
+
+            <br><br/>
+        
+            <input type="email" required name="email" placeholder="email">
+
+            <br>
+
+            <input type="password" required name="senha" placeholder="Senha">
+
+            <br><br/>
+
+            <input type="date" name="data" />
+
+            <br><br/>
+
+            <input type="time" name="hora" />
+
+            <br><br/>
+
+            <input type="datetime-local" name="data e hora" />
+
+            <br><br/>
+
+            <input type="week" name="semana" />
+
+            <br><br/>
+
+            <input type="month" name="mes"/>
+
+            <br><br/>
+
+            <input type="file" multiple accept=".pdf" name="arquivo" />
+
+            <br><br/>
+
+            <input type="submit"  value="Enviar" />
+
+        </form>
+
+        <form action="listagem" method="get">
+
+            <input id="uvav" type="checkbox" name="uvav" />
+            <label for="uvav">Uva verde</label>
+
+            <input id="uvaroxa" type="checkbox" name="uvar" />
+            <label for="uvaroxa">Uva roxa</label>
+            
+            <br>
+
+            <input type="submit"  value="Finalizar" />
+
+        </form>
+
+        <form action="coleta" method="get">
+
+            <input type="radio" name="cor" value="branco" id="branco" />
+            <label for="branco">Branco</label>
+
+            <input type="radio" name="cor" value="prata" id="prata" />
+            <label for="prata">Prata</label>
+
+            <input type="radio" name="cor" id="vermelho" />
+            <label for="vermelho">Vermelho</label>
+
+            <input type="radio" name="cor" id="preto" />
+            <label for="preto">Preto</label>
+
+            <br><br/>
+
+            <label for="cor">Escolha a sua cor</label>
+            <input type="color" id="cor" name="cor" />
+
+            <select name="parcelas">
+                <option value="0">-- parcelas --</option>
+                <option value="1">R$ 250 - 1x sem juros</option>
+                <option value="2">R$ 125 - 2x sem juros</option>
+                <option value="3">R$ 68,33 - 3x sem juros</option>
+                <option value="4">R$ 62,50 - 4x sem juros</option>
+            </select>
+
+            <br><br>
+
+            <label>Avalie o nosso produto:</label>
+            <input type="range" name="percentual" min="0" max="10" value="0">
+
+            <br><br>
+
+            <input type="submit"  value="Enviar" />
+
+        </form>
+
+    </body>
+</html>
